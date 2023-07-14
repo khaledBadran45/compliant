@@ -1,0 +1,161 @@
+<app-nav [isDashboard]="isDashboard"></app-nav>
+<section id="compliants">
+  <div class="container-- mt-5 row m-auto">
+    <div id="type" style="width: 95%" class="d-flex flex-row-reverse row  m-auto">
+      <div class="col-md-3 p-2">
+        <div>
+          <div
+            class="newComplaint anewCompliant borderR py-3 text-center text-light"
+          >
+            <h1 class="h5">شكاوي جديده</h1>
+            <p class="number">150</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div>
+          <div
+            class="newComplaint doneComplaint borderR py-3 text-center text-light"
+          >
+            <h1 class="h5">شكاوي مرفوضه</h1>
+            <p class="number">150</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div>
+          <div
+            class="newComplaint refusedComplaint borderR py-3 text-center text-light"
+          >
+            <h1 class="h5">شكاوي تم اعتمادها</h1>
+            <p class="number">150</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div>
+          <div
+            class="newComplaint refusedComplaint2 borderR py-3 text-center text-light"
+          >
+            <h1 class="h5">شكاوي جديده</h1>
+            <p class="number">150</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="choosedComplaint"
+      class="d-md-flex justify-content-center d-block flex-row-reverse text-center p-4"
+    >
+      <div class="col-md-3 p-2">
+        <div class="p-2">
+          <h1 class="h5">الشكاوي الجديده</h1>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="p-2">
+          <div class="content d-flex flex-row-reverse">
+            <h1 class="h6 pt-2 px-2">التاريخ</h1>
+            <select name="type" class="selectBg border w-75 px-2 py-1" id="">
+              <option class="p-3">الكل</option>
+              <option>19-1-2023</option>
+              <option>20-2-2023</option>
+              <option>24-3-2023</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="p-2">
+          <div class="content d-flex flex-row-reverse">
+            <h1 class="h6 pt-2 mx-1">التصنيف</h1>
+            <select name="type" class="selectBg border w-75 px-2 py-1" id="">
+              <option class="p-3">الكل</option>
+              <option>الشكاوي الجديده</option>
+              <option>الشكاوي المرفوضه</option>
+              <option>الشكاوي تم اعتمادها</option>
+              <option>ابلاغ عن حادث</option>
+              <option>ابلاغ عن احتيال</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 p-2">
+        <div class="p-2">
+          <div class="content d-flex flex-row-reverse">
+            <h1 class="h6 pt-2 mx-1">التصنيف</h1>
+            <select name="type" class="selectBg border w-75 px-2 py-1" id="">
+              <option>الكل</option>
+              <option>مقبوله</option>
+              <option>مرفوضه</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="table"  >
+      <table style="overflow-x:auto">
+      <thead>
+        <tr class="">
+          <th>رقم الشكوي</th>
+          <th>نوع الشكوي</th>
+          <th>تاريخ الشكوي</th>
+          <th>المدينه</th>
+          <th>الاداره</th>
+          <th>الحاله</th>
+          <th>عرض</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1شكوي</td>
+          <td>مايو2023و4</td>
+          <td>الرياض</td>
+          <td>أداره الشكاوي</td>
+          <td class="text-warning">تم قبولها</td>
+          <td><i class="fa-solid fa-eye"></i></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1شكوي</td>
+          <td>مايو2023و4</td>
+          <td>الرياض</td>
+          <td>أداره الشكاوي</td>
+          <td class="text-warning">تم قبولها</td>
+          <td><i class="fa-solid fa-eye"></i></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>1شكوي</td>
+          <td>مايو2023و4</td>
+          <td>الرياض</td>
+          <td>أداره الشكاوي</td>
+          <td class="text-warning">تم قبولها</td>
+          <td><i class="fa-solid fa-eye"></i></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>1شكوي</td>
+          <td>مايو2023و4</td>
+          <td>الرياض</td>
+          <td>أداره الشكاوي</td>
+          <td class="text-warning">تم قبولها</td>
+          <td><i class="fa-solid fa-eye"></i></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>1شكوي</td>
+          <td>مايو2023و4</td>
+          <td>الرياض</td>
+          <td>أداره الشكاوي</td>
+          <td class="text-warning">تم قبولها</td>
+          <td><i class="fa-solid fa-eye"></i></td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+    </div>
+  </div>
+</section>

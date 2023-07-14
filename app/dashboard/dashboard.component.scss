@@ -1,0 +1,66 @@
+@import "../colors";
+.borderR {
+  @include borderR(5px);
+}
+@mixin bg($color) {
+  background-color: $color;
+}
+.anewCompliant {
+  @include bg($anewCompliant);
+}
+.doneComplaint {
+  @include bg($doneComplaint);
+}
+.refusedComplaint {
+  @include bg($refusedComplaint);
+}
+.refusedComplaint2 {
+  @include bg($refusedComplaint2);
+}
+.selectBg{
+  background-color: $selectBg;
+}
+select{
+  outline: none;
+}
+.option{
+  border: 1px solid $cardBorder;
+}
+#table{
+  overflow-x: scroll; 
+}
+table {
+  width: 95%;
+  height: 60vh;
+  direction: rtl;
+  text-align: center;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+th{
+  padding-block: 1em;
+  background-color: $doneComplaint;
+  color: white;
+}
+td,th{
+  // padding: 0.5em;
+  // padding-block: 1em;
+}
+tr{
+  cursor: pointer;
+  border-bottom: 1px solid $cardBorder;
+    &:hover{
+      background-color: #F6F6F6;
+      border: none;
+  }
+
+  .fa-eye:hover{
+    color: #C5DAE3;
+    cursor: pointer;
+  }
+}
+@media (max-width:850px){
+  table{
+    width:40em;
+  }
+}

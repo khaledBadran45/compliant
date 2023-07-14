@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+$anewCompliant:#FDBE7B;
+$doneComplaint:#12AA77;
+$refusedComplaint:#FF6A6F;
+$refusedComplaint2:#43A7D8 ;
+$navbackgroundColor: #f4f4f4;
+$navBtnsbackgroundColor: #fff;
+$selectBg:#E7FFF3;
+$navBtnsColors: gray;
+$cardBackground:#FBFBFB;
+$cardBorder:#8C8C8C;
+$imgIsdCardBorder:#E2E2E2;
+@mixin borderR($pixel){
+    border-radius: $pixel;
+}

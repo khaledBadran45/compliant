@@ -1,0 +1,50 @@
+@import "../colors";
+
+nav {
+  background-color: $navbackgroundColor;
+  max-height: 116px;
+  .nav-container{
+    width: 96%;
+    margin: auto;
+  }
+}
+
+.lang-notifyBtns button {
+  width: 62px;
+  height: 46px;
+  background-color: $navBtnsbackgroundColor;
+  color: $navBtnsColors;
+  border: none;
+  border: 1px solid #e1e3e6;
+  @include borderR(5px);
+}
+.searchAbout {
+  padding-right: 1em;
+  width: 100%;
+  input {
+    width: 85%;
+    height: 48px;
+    outline: none;
+    direction: rtl;
+    border: none;
+    padding-inline:2em;
+    @include borderR(25px);    
+  }
+}
+.fa-search {
+  position: relative;
+  left: 2em;
+  cursor: pointer;
+}
+@media (max-width: 720px) {
+  .fa-search {
+    left: -0.8em;
+  }
+}
+@media (min-width: 766px) and (max-width: 990px) {
+}
+@media (max-width:950px) {
+  .searchAbout{
+    display: none;
+  }
+}

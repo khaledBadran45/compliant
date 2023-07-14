@@ -1,0 +1,49 @@
+@import '../colors';
+
+.chooseComplaint{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card{
+  // 5 cards 
+  display: flex;
+  margin: 1em auto;
+  width: 17%;
+  height: 125px;
+  border:1px solid $cardBorder;
+  background-color: $cardBackground;
+  i{
+    font-size: 1.5em;
+    padding: 3px;
+    color:#8C8C8C;
+    border: 1px solid $imgIsdCardBorder;
+    @include borderR(5px)
+  }
+}
+.light{
+  color: #fff;
+}
+@media  (max-width:768px) {
+  .chooseComplaint {
+    display: block;
+  }
+  .card{
+    width: 70%;
+  }
+}
+.submit{
+  padding: 0.5em 6em;
+  border: 1px solid $navBtnsColors;
+}
+.colorW{
+  color: #fff !important;
+}
+.bgG{
+  background-color: #33835c;
+  color: #fff;
+}
+.submit{
+  @include borderR(5px)
+}

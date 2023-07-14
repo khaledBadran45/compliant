@@ -1,0 +1,31 @@
+<nav>
+    <div class="nav-container justify-content-around d-flex">
+      <div
+        class="navLeft d-flex align-items-center justify-content-between col-md-4"
+      > 
+        <div class="complaintsChecker"  *ngIf="isDashboard">
+          <img src="../../assets/ComplaintsChecker.png" alt="" srcset="" />
+        </div>
+        <div class="lang-notifyBtns m-2 d-flex">
+          <button class="m-2">AR</button>
+          <button class="m-2"><i class="fa-solid fa-bell"></i></button>
+        </div>
+      </div>
+      <div
+        class="navRight d-flex justify-content-end align-items-center col-md-7"
+      >
+      <div class="searchAbout d-md-block d-none" *ngIf="isDashboard">
+          <i class="fas fa-search" *ngIf="isDashboard"></i>
+          <input
+            type="text"
+            name="searchValue"
+            placeholder="ما الذي تبحث عنه"
+            id=""
+          />
+        </div>
+        <div class="logo">
+          <img src="../../assets/download 1.png" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+  </nav>
